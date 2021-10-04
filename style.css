@@ -1,0 +1,276 @@
+@font-face{
+    font-family: Proxima;
+    src: url(Font/Proxima\ N\ W01\ Reg.ttf);
+}
+body {
+    font-family: Proxima;
+}
+/*Home Page*/
+.homePage td{
+    padding-bottom: 30px;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    
+}
+.homePage a:hover {
+  text-decoration: underline green;
+  text-decoration-thickness: 3px;
+  
+ 
+
+ }
+.homePage a{
+    text-decoration: none;
+    color: black;
+}
+
+.homePage{
+   
+ position: relative;
+ margin-top: 125px;
+ 
+}
+.top{
+margin: 0 auto;
+padding-top: 5%;
+}
+
+/*End Home Page*/
+
+
+/*Header*/
+.logo img{
+    height: auto;
+    width: 300px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+ margin-bottom: 15px;
+}
+.logo{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+li {
+   color: rgba(255, 255, 255, 0);
+   padding: 16px;
+   text-decoration: none;
+   display: inline-block;
+   
+}
+header {
+    color: black;
+}
+header a:hover{
+  text-decoration: underline green;
+  text-decoration-thickness: 3px;
+}
+
+ul{
+    display: block;
+    text-align: center;
+ width: 100%;
+  padding: 0;
+  margin:auto;
+}
+ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+.headerText{
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 25px;
+}
+/*End Header*/
+
+
+/*Clients*/
+
+  @media (min-width: 1150px) {
+    .clientsGrid {
+        display: grid;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-right: 50px ;
+         grid-template-columns: repeat(5, auto);
+         grid-template-rows: auto;
+         grid-auto-flow: dense;
+        }
+      
+      .clientGridDamagedGoods{
+        grid-column: 3;
+        grid-row: 1;
+      }
+      .clientGridDamagedGoods:hover{
+        transform: scale(1.05);
+      }
+      .clientGridFixLeondis{
+        grid-column: 5;
+        grid-row: 1
+      }
+      .clientGridFixLeondis:hover{
+        transform: scale(1.05);
+      }
+      .clientGridLuke{
+        grid-column: 2;
+        grid-row: 2
+      }
+      .clientGridLuke:hover{
+        transform: scale(1.05);
+      }
+      .clientGridRP{
+        grid-column: 4;
+        grid-row: 2;
+      }
+      .clientGridRP:hover{
+        transform: scale(1.05);
+      }
+      .clientGridBuitano:hover{
+        transform: scale(1.05);
+      }
+  };
+  .clientGridJC:hover{
+    transform: scale(1.05);
+  }
+
+  .clientsGrid {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    display: grid;
+    margin-top: 20px;
+    gap: 0px;
+  }
+  .clientsGrid img{
+    height: 300px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .clientsGrid p {
+      font-size: 25px;
+      font-weight: bold;
+  }
+  
+  .clientGridBuitano,.clientGridDamagedGoods,.clientGridFixLeondis,.clientGridLuke,.clientGridRP{
+  margin: 0 auto;
+  text-align: center;
+
+  }
+
+
+  
+  /*End Clients Page*/
+
+  /*Artist Page*/
+  @media (min-width: 1000px) {
+    .artistPage {
+        display: grid;
+        max-width: 1200px;
+         grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;    
+        
+        
+}
+.spot iframe {
+  height: 300px;
+  width: 350px;
+  margin: 0 auto;
+  text-align: center;
+}
+  }
+   @media (max-width: 1000px){ /*Device width is <= 1000*/
+    .spot iframe {
+      height: 300px;
+      width: 250px;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+
+  .artistPage {
+      display: grid;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    text-align: center;
+    grid-gap: 1rem;
+    
+  }
+.columnThree{
+    font-size: 20px;
+    text-align: center;
+}
+.artistPageImg img {
+    margin-right: auto;
+    margin-left: auto;
+    height: 300px;
+    width: 250px;
+  }
+.social-item img {
+    height: 25px;
+    width: 25px;
+}
+
+
+  /*End Artists Page*/
+
+
+  /*Contact Page*/
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body { background:rgb(255, 255, 255); }
+form { max-width:420px; margin:50px auto; }
+
+.feedback-input {
+  color:rgb(0, 0, 0);
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #000000;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+form{
+  margin-top: 20px;
+}
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+.submit:hover{
+  transform: scale(1.05);
+
+}
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#000000;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:rgb(255, 255, 255);
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+
+/*End Contact Page*/
